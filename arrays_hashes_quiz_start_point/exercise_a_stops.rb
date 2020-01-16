@@ -15,13 +15,14 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Ha
 stops.push("Edinburgh Waverley")
 
 #2
-stops.unshift("Glasgow Queen Street")
+stops.unshift("Glasgow Queen St")
 
 #3
 stops.insert(4, "Polmont")
 
 #4
 p stops[5]
+# p stops.index("Linlithgow")
 
 #5
 stops.delete("Livingston")
@@ -42,6 +43,10 @@ for stop in stops
   else
   end
 end
+
+#p stops.index("Falkirk High")
+#p stops.fetch(2)
+#p stops[2..2]
 
 #9
 p stops.reverse()

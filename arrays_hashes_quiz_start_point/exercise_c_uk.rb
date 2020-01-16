@@ -30,7 +30,7 @@ p united_kingdom[1][:capital] = "Cardiff"
   population: 1811000,
   capital: "Belfast",
 }
-puts united_kingdom
+p united_kingdom
 
 #3
 for countries in united_kingdom
@@ -40,8 +40,8 @@ end
 #4
 def total(countries)
   total_population = 0
-  for population in countries
-    total_population += population[:population]
+  for country in countries
+    total_population += country[:population]
   end
   return total_population
 end
